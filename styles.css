@@ -1,0 +1,145 @@
+* {
+    box-sizing: border-box;
+}
+
+body{
+    background: rgb(33, 26, 100);
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.text {
+    color: white;
+}
+
+#title{
+    text-align: center;
+}
+
+#title h1{
+    font-weight: 5000;
+    margin: 0;
+}
+
+h1{
+    display: block;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-size: 3em;
+    font-weight: bold;
+}
+
+#title h2{
+    font-weight: 500;
+    font-size: 25px;
+}
+
+b{
+    font-style: italic;
+}
+
+h2{
+    display: block;
+}
+
+#core{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.imageswap{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    filter:hue-rotate(0deg);
+    /* background-color: black; */
+}
+
+.imageswap img{
+    max-height: 95%;
+    max-width: 95%;
+}
+
+.inputfile{
+    display: block;
+    margin: 0 auto;
+    /* height: 0.1px;
+    width: 0.1px; */
+    opacity: 0;
+    overflow: hidden;
+    width: max-content;
+    max-width: 100%;
+    z-index: -1;
+    /* position: absolute; */
+}
+
+.import label{
+    display: block;
+    font-weight: 500;
+    text-align: center;
+    background-color: rgba(0, 0, 0, 0.5);
+    color: white;
+    border: 1px solid black;
+    width: initial;
+    height: calc(2.5 * 16px);
+}
+
+/* [type=]"file" */
+
+.inputfile:hover{
+    cursor: pointer;
+}
+
+.export{
+    display: block;
+    margin: 0 auto;
+    overflow: hidden;
+    width: max-content;
+    max-width: 100%;
+}
+
+#export-button{
+    font-weight: 500;
+    text-align: center;
+    background-color: rgba(0, 0, 0, 0.5);
+    color: white;
+    border: 1px solid black;
+    width: initial;
+    height: calc(2.5 * 16px);
+}
+
+#export-button:hover{
+    cursor: pointer;
+}
+
+#container{
+    display: flex;
+    -webkit-appearance: none;
+    height: 35px;
+    min-width: 50px;
+    width: 95%;
+    background:black;
+    border-radius: 3px;
+    outline: none;
+    opacity: 0.5;
+    position: relative;
+    vertical-align: middle;
+    -webkit-transition: 0.2s;
+    transition: opacity 0.2s;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    align-items: center;
+    justify-content: center;
+}
+
+#container:hover{
+    opacity: 1;
+}
+
+#slider{
+    -webkit-appearance: none;
+    width: 98%;
+}

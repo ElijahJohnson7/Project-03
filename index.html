@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Hue-Rotate</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+<main class="outer-background">
+
+    <div class="text" id="title">
+        <h1 class="top-header">Divine Hues</h1>
+        <h2>Image
+            <b>Warp:</b>
+            Import and Export
+        </h2>
+    </div>
+
+    <div class="main-background">
+        <div id="core">
+            <div class="imageswap" id="imageswap">
+                <img src="156-1566441_new-york-city-night-lights.jpeg"/>
+            </div>
+            <div class="import">
+                <label for="file-upload" class="opacity text import-button">
+                </label>
+                <input name="file-upload" class="inputfile" id="file-upload" type="file" value="Add Your Image"/>
+            </div>
+            <div id="container">
+                <input type = "range" min="0" max ="360" step="1" value ="0" id="slider"/> 
+            </div>
+            <div class="export">
+                <button class="opacity text" id="export-button">
+                    <div class="text">Save Your Image</div>
+                </button>
+            </div>
+            <footer>
+                <p class="text" id="bottom-footer">
+                    Designed by Elijah Johnson
+                </p>
+            </footer>
+        </div>
+    </div>
+
+    <script src="index.js"></script>
+
+</main>
+</body>
+</html>
